@@ -1,6 +1,7 @@
 import Banner from "../components/Banner";
 import Invest from "../components/Invest";
 import Navbar from "../components/Navbar";
+import Returns from "../components/Returns";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Banner />
       <Invest />
+      <Returns />
     </div>
   );
 }
