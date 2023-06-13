@@ -25,11 +25,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="w-[100%] md:w-[50%] lg:w-[40%] relative">
-          <Image
-            src={BannerImg}
-            className="w-auto h-auto object-cover"
-            alt="banner"
-          />
+          <Image src={BannerImg} alt="banner" />
         </div>
         <div className="absolute left-[1050px] top-24">
           <Image src={CoinRight} alt="coinright" />
