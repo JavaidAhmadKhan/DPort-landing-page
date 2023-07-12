@@ -17,7 +17,7 @@ const Returns = ({ sno }) => {
         {DATA.map((data) => (
           <div
             key={data.id}
-            className="flex flex-col items-center justify-center gap-8 boxShadow py-12 px-12 bg-[#C8D8E4] rounded-md"
+            className="flex flex-col items-center justify-center gap-3 md:gap-5 lg:gap-8 boxShadow py-8 px-8 bg-[#C8D8E4] rounded-md"
           >
             <Image src={data.image} alt={`${data.image}`} />
             <p className=" text-[#414141] leading-[28px] text-[14px] font-medium text-center ">
