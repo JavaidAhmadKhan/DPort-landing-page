@@ -13,13 +13,13 @@ const Footer = () => {
           </Link>
         </div>
         <div>
-          <p>
+          <p className="text-[12px] md:text-[14px] lg:text-[14px]">
             DPort is a team of highly talented professionals from all across the
             globe
           </p>
         </div>
       </div>
-      <ul className="flex items-center justify-center gap-4 md:justify-center lg:justify-end  md:gap-4 lg:gap-6 font-semibold text-[10px] md:text-[14px] lg:text-[14px] leading-[10px] md:leading-[18px] lg:leading-[21px] mt-3">
+      <ul className="flex items-center justify-center gap-4 md:justify-center lg:justify-end  md:gap-4 lg:gap-6 font-semibold text-[14px] leading-[10px] md:leading-[18px] lg:leading-[21px] mt-3">
         <li>Home</li>
         <li>About Us</li>
         <li>Teams</li>
