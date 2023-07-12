@@ -39,22 +39,12 @@ export default function Navbar() {
               </Disclosure.Button>
             </div>
 
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ml-[320px] md:ml-0 lg:ml-0">
-              <Link href={"/"}>
-                <Image
-                  className="flex h-auto w-auto object-contain"
-                  src={Logo}
-                  alt="DPort"
-                />
-              </Link>
-              <Link href={"/"}>
-                <Image
-                  className="hidden h-auto w-auto lg:hidden object-contain"
-                  src={Logo}
-                  alt="DPort"
-                />
-              </Link>
-
+            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
+              <div className="ml-auto md:ml-0 lg:ml-0">
+                <Link href={"/"}>
+                  <Image className="object-contain" src={Logo} alt="DPort" />
+                </Link>
+              </div>
               <div className="flex flex-shrink-0 items-center justify-center md:ml-auto lg:ml-auto" />
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
