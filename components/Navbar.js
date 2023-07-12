@@ -1,23 +1,3 @@
-// const Navbar = () => {
-//   return (
-//     <div className="bg-[rgb(200,216,228)] px-0 md:px-12 lg:px-20 sticky top-0 left-0 right-0 z-10">
-//       <div className="flex items-center justify-between p-6">
-//         <Link href="/">
-//           <Image src={Logo} alt="Dport" className="cursor-pointer" />
-//         </Link>
-//         <ul className="flex items-center justify-between gap-2 md:gap-4 lg:gap-6 font-semibold text-[10px] md:text-[14px] lg:text-[14px] leading-[10px] md:leading-[18px] lg:leading-[21px]">
-//           <li>Home</li>
-//           <li>About Us</li>
-//           <li>Teams</li>
-
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
 "use client";
 
 import React from "react";
@@ -26,6 +6,7 @@ import Image from "next/image";
 import Button from "./Button";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -45,10 +26,10 @@ export default function Navbar() {
     >
       {({ open }) => (
         <>
-          <div className="relative  h-16 flex items-center justify-between ">
+          <div className="relative p-6 flex items-center justify-between ">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* Mobile menu button*/}
-              <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-black  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white mx-4">
                 <span className="sr-only">Open main menu</span>
                 {open ? (
                   <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -57,18 +38,24 @@ export default function Navbar() {
                 )}
               </Disclosure.Button>
             </div>
-            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ml-[320px] md:ml-0 lg:ml-0 ">
-              <Image
-                className="block h-8 w-auto lg:hidden"
-                src={Logo}
-                alt="Your Company"
-              />
-              <Image
-                className="hidden h-8 w-auto lg:block"
-                src={Logo}
-                alt="Your Company"
-              />
-              <div className="flex flex-shrink-0 items-center md:ml-auto lg:ml-auto" />
+
+            <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ml-[320px] md:ml-0 lg:ml-0">
+              <Link href={"/"}>
+                <Image
+                  className="block h-12 w-auto lg:hidden"
+                  src={Logo}
+                  alt="Your Company"
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  className="hidden h-12 w-auto lg:block"
+                  src={Logo}
+                  alt="Your Company"
+                />
+              </Link>
+
+              <div className="flex flex-shrink-0 items-center justify-center md:ml-auto lg:ml-auto" />
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
@@ -76,21 +63,20 @@ export default function Navbar() {
                       key={item.name}
                       href={item.href}
                       className={classNames(
-                        item.current
-                          ? "bg-gray-600 text-white"
-                          : "text-black-300 hover:bg-gray-600 hover:text-white",
-                        "rounded-md px-3 py-2 text-sm font-medium"
+                        item.current ? "text-[#414141]" : "text-[#414141]",
+                        "rounded-md px-3 py-2  font-semibold text-[10px] md:text-[14px] lg:text-[14px] leading-[10px] md:leading-[18px] lg:leading-[21px]"
                       )}
                       aria-current={item.current ? "page" : undefined}
                     >
                       {item.name}
                     </a>
                   ))}
-                  {/* <Button title="Get early access" /> */}
+                  <Button title="Get early access" />
                 </div>
               </div>
             </div>
           </div>
+
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
@@ -99,14 +85,17 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? "bg-gray-600 text-white" : "text-black",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    item.current ? "" : "text-[#414141]",
+                    "block rounded-md px-3 py-2  font-semibold text-[10px] md:text-[14px] lg:text-[14px] leading-[10px] md:leading-[18px] lg:leading-[21px]"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
               ))}
+            </div>
+            <div className="flex items-start mx-4 pb-4">
+              <Button title="Get early access" />
             </div>
           </Disclosure.Panel>
         </>

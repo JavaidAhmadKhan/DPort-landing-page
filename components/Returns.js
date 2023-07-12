@@ -3,7 +3,7 @@ import React from "react";
 
 import DATA from "../data";
 
-const Returns = ({ sno }) => {
+const Returns = () => {
   return (
     <div>
       <h1 className="text-[#414141] font-semibold text-[24px]  text-center">
