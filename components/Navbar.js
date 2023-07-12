@@ -42,16 +42,16 @@ export default function Navbar() {
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ml-[320px] md:ml-0 lg:ml-0">
               <Link href={"/"}>
                 <Image
-                  className="block h-12 w-auto lg:hidden"
+                  className="flex h-auto w-auto object-contain"
                   src={Logo}
-                  alt="Your Company"
+                  alt="DPort"
                 />
               </Link>
               <Link href={"/"}>
                 <Image
-                  className="hidden h-12 w-auto lg:block"
+                  className="hidden h-auto w-auto lg:hidden object-contain"
                   src={Logo}
-                  alt="Your Company"
+                  alt="DPort"
                 />
               </Link>
 
