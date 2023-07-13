@@ -24,3 +24,36 @@ p {
 .boxShadow {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.2);
 }
+
+.footerlast {
+  color: #a0abb8;
+  font-size: 12px;
+  font-weight: 500;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: #21372a;
+  border: 2px;
+  border-radius: 5%;
+  background-color: #414141;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: #21372a;
+  border: 2px;
+  border-radius: 5%;
+  background-color: #414141;
+  color: white;
+}
+.contactus {
+  background-color: #093946;
+  border: 1px solid #fff;
+}

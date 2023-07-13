@@ -1,9 +1,17 @@
 import React from "react";
 
+const BUTTON_TYPE_CLASSES = {
+  contact: "contactus",
+  inverted: "inverted",
+};
 const Button = (props) => {
   return (
     <div className="flex items-center justify-center">
-      <button className="flex  items-center  justify-center p-[10px] border-[#21372A] border-2 rounded bg-[#414141] text-white">
+      <button
+        className={` font-semibold text-[14px] button-container ${
+          BUTTON_TYPE_CLASSES[props.buttonType]
+        }`}
+      >
         {props.title}
       </button>
     </div>

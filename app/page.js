@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import ContatBanner from "../components/ContatBanner";
 import Footer from "../components/Footer";
 import Invest from "../components/Invest";
 import Navbar from "../components/Navbar";
@@ -11,6 +12,7 @@ export default function Home() {
       <Banner />
       <Invest />
       <Returns />
+      <ContatBanner />
       <Footer />
     </div>
   );
