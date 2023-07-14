@@ -2,7 +2,7 @@ import React from "react";
 
 const BUTTON_TYPE_CLASSES = {
   contact: "contactus",
-  inverted: "inverted",
+  team: "team",
 };
 const Button = (props) => {
   return (

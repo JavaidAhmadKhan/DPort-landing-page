@@ -3,6 +3,7 @@ import ContatBanner from "../components/ContatBanner";
 import Footer from "../components/Footer";
 import Invest from "../components/Invest";
 import Navbar from "../components/Navbar";
+import OurTeam from "../components/OurTeam";
 import Returns from "../components/Returns";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Banner />
       <Invest />
       <Returns />
+      <OurTeam />
       <ContatBanner />
       <Footer />
     </div>
