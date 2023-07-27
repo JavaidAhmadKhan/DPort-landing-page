@@ -21,7 +21,7 @@ const Banner = () => {
             the Semantics
           </p>
           <div className="pt-8 flex justify-center md:justify-start lg:justify-start pb-8">
-            <Button title="Get early access" />
+            <Button title="Get early access" buttonType="Access"/>
           </div>
         </div>
         <div className="w-[100%] md:w-[50%] lg:w-[40%] relative">

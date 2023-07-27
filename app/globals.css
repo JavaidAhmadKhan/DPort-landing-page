@@ -92,3 +92,13 @@ li {
   font-weight: 600;
   line-height: normal;
 }
+
+.team:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.Access:hover {
+  background-color: #093946;
+}
+

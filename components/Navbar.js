@@ -9,9 +9,10 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
-  { name: "Teams", href: "#", current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/about", current: false },
+  { name: "Teams", href: "/team", current: false },
+  { name: "Contact", href: "/contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -61,12 +62,11 @@ export default function Navbar() {
                       {item.name}
                     </a>
                   ))}
-                  <Button title="Get early access" />
+                  <Button title="Get early access" buttonType="Access" />
                 </div>
               </div>
             </div>
           </div>
-
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
@@ -85,7 +85,7 @@ export default function Navbar() {
               ))}
             </div>
             <div className="flex items-start mx-4 pb-4">
-              <Button title="Get early access" />
+              <Button title="Get early access" buttonType="Access" />
             </div>
           </Disclosure.Panel>
         </>

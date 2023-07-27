@@ -1,35 +1,34 @@
 import React from "react";
 
 import Button from "./Button";
-import { BsArrowRight } from "react-icons/bs";
 
 const OurTeam = () => {
   return (
     <div className="px-4 md:px-20 lg:px-24 py-16 flex flex-col md:flex-row lg:flex-row gap-14">
       <div className="w-[100%] md:w-[50%] lg:w-[60%]">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-3 gap-y-3">
-          <div className="gridContainer">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-8">
+          <div className="gridContainer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
             <h2 className="titleHeading">
               Javaid Khan <br />
               <span className="titleSubHeading">Founder</span>
             </h2>
           </div>
 
-          <div className="gridContainer">
+          <div className="gridContainer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
             <h2 className="titleHeading">
               Aqib Javaid <br />
               <span className="titleSubHeading">Co-Founder</span>
             </h2>
           </div>
 
-          <div className="gridContainer">
+          <div className="gridContainer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
             <h2 className="titleHeading">
               Javaid Khan <br />
               <span className="titleSubHeading">CTO</span>
             </h2>
           </div>
 
-          <div className="gridContainer">
+          <div className="gridContainer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
             <h2 className="titleHeading">
               Peter Zeal <br />
               <span className="titleSubHeading">Marketting Head</span>
@@ -51,9 +50,8 @@ const OurTeam = () => {
             worth of interest and reinvest as per your desire.
           </p>
         </div>
-        <div className="flex gap-3 mt-6">
+        <div className="flex items-center justify-start gap-3 mt-6 ">
           <Button title="Check out the fam" buttonType="team" />
-          {/* <BsArrowRight /> */}
         </div>
       </div>
     </div>

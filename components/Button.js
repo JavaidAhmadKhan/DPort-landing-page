@@ -3,6 +3,7 @@ import React from "react";
 const BUTTON_TYPE_CLASSES = {
   contact: "contactus",
   team: "team",
+  Access: "Access",
 };
 const Button = (props) => {
   return (

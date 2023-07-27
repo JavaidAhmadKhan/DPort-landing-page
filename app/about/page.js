@@ -1,11 +1,15 @@
-import Image from "next/image";
 import React from "react";
 
-import DATA from "../data";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Image from "next/image";
+import DATA from "../../data";
 
-const Returns = () => {
+const page = () => {
   return (
-    <div>
+    <>
+      <Navbar />
+      <div className="pt-8 pb-8">
       <h1 className="text-[#414141] font-semibold text-[24px]  text-center">
         Our returns
       </h1>
@@ -33,7 +37,9 @@ const Returns = () => {
         ))}
       </div>
     </div>
+      <Footer />
+    </>
   );
 };
 
-export default Returns;
+export default page;

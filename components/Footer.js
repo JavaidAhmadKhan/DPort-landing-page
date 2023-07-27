@@ -30,15 +30,21 @@ const Footer = () => {
         </div>
         <div>
           <ul className="flex flex-1 items-center justify-between gap-6 mt-[24px]">
-            <li>
-              <BsFacebook size={26} color="#4267B2" />
-            </li>
-            <li>
-              <BsInstagram size={26} color="#E1306C" />
-            </li>
-            <li>
-              <BsTwitter size={26} color="#1DA1F2" />
-            </li>
+            <a href="https://www.facebook.com" target="_blank">
+              <li>
+                <BsFacebook size={26} color="#4267B2" />
+              </li>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <li>
+                <BsInstagram size={26} color="#E1306C" />
+              </li>
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+              <li>
+                <BsTwitter size={26} color="#1DA1F2" />
+              </li>
+            </a>
           </ul>
         </div>
       </div>
